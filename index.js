@@ -63,7 +63,6 @@ var downloadfile = async (url, newFilename) => {
  */
 var watermarkPdf = (filename, numPages, user) => {
   console.log('filename '+filename)
-
 	return new Promise((resolve, reject) => {
 		const pdfDoc = new HummusRecipe(filename, `${filename}`)
     console.log('num. pages ' + numPages)
@@ -80,7 +79,6 @@ var watermarkPdf = (filename, numPages, user) => {
 
     pdfDoc.endPDF()
     console.log('Pdf Done!')
-    
 		resolve(`${filename}`)
 	})
 
